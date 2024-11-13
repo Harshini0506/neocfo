@@ -1,0 +1,192 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+em {
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+/* Navbar Styling */
+.logo {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 8.5em;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    width: 85%;
+}
+
+.nav-list .nav-center {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1875rem;
+    font-family: serif;
+    font-weight: 500;
+}
+
+/* Main Content and Cards */
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.875rem;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.particular-content {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0px -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0px 0.25rem 0.375rem;
+    width: 25rem;
+    padding: 5.9375rem;
+    margin-left: 5rem;
+}
+
+.p1 {
+    color: rgb(213, 221, 243);
+    font-family: serif;
+    font-size: 1.25rem;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/mainimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    position: absolute;
+    width: 65.125rem;
+    height: 7rem;
+    left: 7.8125rem;
+    top: 16.875rem;
+    font-size: 3.0625rem;
+}
+
+.bottom_info {
+    position: absolute;
+    left: 7.8125rem;
+    top: 21.25rem;
+    font-family: 'Geist';
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    display: flex;
+    align-items: center;
+    color: #829392;
+}
+
+/* Buttons */
+.ai, .ai1, .butn {
+    font-size: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.9375rem;
+}
+
+/* Responsive Design */
+
+/* Extra Small Devices (Max-width: 475px) */
+@media screen and (max-width: 475px) {
+    html {
+        font-size: 50%;
+    }
+
+    .gradient {
+        width: 40%;
+    }
+
+    .butn {
+        font-size: 10px;
+    }
+
+    .q {
+        font-size: 11px;
+    }
+}
+
+/* Small Devices (475px - 640px) */
+@media screen and (min-width: 475px) and (max-width: 640px) {
+    html {
+        font-size: 60%;
+    }
+
+    .gradient {
+        width: 45%;
+    }
+}
+
+/* Medium Devices (640px - 768px) */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    .gradient {
+        width: 50%;
+    }
+}
+
+/* Large Devices (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+
+    .gradient {
+        width: 55%;
+    }
+
+    .card-container, .cimg {
+        width: 70%;
+    }
+}
+
+/* Extra Large Devices (1024px - 1280px) */
+@media screen and (min-width: 1024px) and (max-width: 1224px) {
+    html {
+        font-size: 90%;
+    }
+
+    .gradient {
+        width: 65%;
+    }
+}
+
+/* Wide Screens (1280px+) */
+@media screen and (min-width: 1280px) {
+    html {
+        font-size: 100%;
+    }
+
+    .gradient {
+        width: 70%;
+    }
+}
